@@ -1,8 +1,8 @@
-"""
-rptReader Obj
+# -*- coding: utf-8 -*-
+#!/usr/bin/python
+"""TWSE RPT Reader
 """
 
-#!/usr/bin/python
 import sys
 import os
 import multiprocessing
@@ -69,21 +69,3 @@ def OptionsDailyOutput(optionsDailyList):
 def OptionsDailyFormat(data):
     data = data.replace(' ', '').replace(',\n', '')
     return data.split(',')
-
-
-'''
-class rptReader():
-
-    def __init__(self, rptFileName):
-        # check python version.
-        if sys.version_info.major == 2:
-            from codecs import open as open
-
-        # open srcFileim
-        with codecs.open(rptFile, encoding='big5') as srcFile:
-            self.data = srcFile.readline()
-'''
-
-'''
-class Comodity
-'''
